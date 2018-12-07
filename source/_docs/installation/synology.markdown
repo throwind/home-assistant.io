@@ -214,6 +214,7 @@ Update your firewall (if it is turned on the Synology device):
 Copy your configuration.yaml file into the config folder
 That's it... you're all set to go
 
+
 Here are some useful commands:
 
 - Start Home Assistant:
@@ -238,5 +239,15 @@ $ sudo /volume1/homeassistant/hass-daemon restart
 
 ```bash
 $  /volume1/@appstore/py3k/usr/local/bin/python3 -m pip install --upgrade homeassistant
+```
+
+Some other things may needed:
+
+Install pip with the previous version. otherwise it may throw ImportError: No module named 'pip.locations'.
+Install SQLAlchemy and home-assistant-frontend libs.
+```bash
+$python3 -m pip install pip==9.0.1
+$python3 -m pip install SQLAlchemy
+$python3 -m pip install home-assistant-frontend
 ```
 
